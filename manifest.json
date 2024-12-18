@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "HistLog",
+    "version": "1.0",
+    "description": "Logs browser history entries to a HTTP endpoint.",
+    "permissions": [
+        "history",
+        "storage",
+        "webRequest",
+        "management"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/ico-16.png",
+            "48": "icons/ico-48.png",
+            "128": "icons/ico-128.png"
+        }
+    }
+}

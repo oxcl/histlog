@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HistLog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 5px 10px;
+            width: 200px
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <img src="icons/ico-48.png" alt="HistLog icon" />
+        HistLog
+    </h2>
+    <label for="endpoint">HTTP Endpoint:</label>
+    <input type="text" id="endpoint" placeholder="Enter endpoint URL" disabled />
+    <button id="save" disabled>Save</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
